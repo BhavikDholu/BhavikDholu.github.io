@@ -1,0 +1,22 @@
+.link-stack{
+    gap : 30px;
+}
+.navbar{
+    position: sticky;
+    top : 0;
+    width : 100%;
+    z-index: 1 ;
+    background-color: #30363d;
+    /* opacity: 80%; */
+}
+
+/* @media only screen and (min-width: 600px) {
+    .link-stack{
+        display: block;
+    }
+} */
+/* @media screen and (max-width: 48em){
+    .link-stack {
+      display: none;
+    }
+  } */
