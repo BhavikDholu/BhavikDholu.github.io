@@ -1,18 +1,16 @@
 import './App.css';
 
-import AboutMe from './Routes/AboutMe';
-import Home from './Routes/Home';
+import AboutMe from './components/AboutMe';
+import Home from './components/Home';
 import Navbar from "./components/Navbar";
-import AllRoutes from './Routes/AllRoutes';
-import Skills from './Routes/Skills';
-import Project from './Routes/Project';
-import Contact from './Routes/Contact';
+import Skills from './components/Skills';
+import Project from './components/Project';
+import Contact from './components/Contact';
 function App() {
   return (
     <div className="App">
       
       <Navbar />
-      <AllRoutes />
       <Home />
       <AboutMe />
       <Skills />

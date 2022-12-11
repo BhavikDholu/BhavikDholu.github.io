@@ -4,7 +4,7 @@ import {ExternalLinkIcon} from "@chakra-ui/icons";
 import {BsGithub,BsLinkedin} from "react-icons/bs"
 const Home = () => {
   return (
-    <Box h={{base:"auto",md:"80vh"}}>
+    <Box h={{base:"auto",md:"70vh"}} id="home">
       <SimpleGrid columns={{sm: 1, md: 2}} justifyContent="space-around" mt={[0, 4, 6, 8]}>
         <Box p={[4, 8, 14, 20]} textAlign={{base:"center", md:"left"}} spacing={10}>
           <Heading sixe="xl" mt={2}>Hello, World!</Heading>

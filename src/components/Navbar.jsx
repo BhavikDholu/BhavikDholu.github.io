@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
 import {Flex,Box,Text,HStack,Button,Show, Menu,
   MenuButton,
   MenuList,
@@ -7,40 +6,28 @@ import {Flex,Box,Text,HStack,Button,Show, Menu,
 import './Navbar.css';
 import {HamburgerIcon} from "@chakra-ui/icons";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
+import Resume from "../assets/Bhavik_Dholu_Resume.pdf";
+import {Link} from "react-scroll";
 
 const link = [
-  {
-    to: "/",
+  { id : "home",
     title: "Home"
   },
-  {
-    to: "/about",
+  { id : "about",
     title: "About Me"
   },
-  {
-    to: "/skills",
+  { id : "skill",
     title: "Skills"
   },
-  {
-    to: "/project",
+  { id : "project",
     title: "Project"
   },
-  {
-    to: "/contect",
-    title: "Contect"
+  { id : "contact",
+    title: "Contact"
   }
 ];
 
 const navbar = () => {
-
-  const activeStyle = {
-    textDecoration: "none",
-    color: "red"
-  };
-  const normelStyle = {
-    textDecoration: "none",
-    color: "white"
-  };
 
   return (
     <div className="navbar">
@@ -54,15 +41,9 @@ const navbar = () => {
     <Show above='md'>
     <HStack className='link-stack'>
     {link.map((e) => (
-        <NavLink
-          style={({ isActive }) => (isActive ? activeStyle : normelStyle)}
-          key={e.to}
-          to={e.to}
-        >
-          {e.title}
-        </NavLink>
+        <Link key={e.id} activeClass="active" to={e.id} spy={true} smooth={true} duration={1500}>{e.title}</Link>
       ))}
-      <Button bg="white" color="black"><a href='https://drive.google.com/file/d/1NXdejID4ESWnBTpnrxQgJP6-9c17_777/view?usp=share_link' download={true}>Resume <ExternalLinkIcon/></a></Button>
+      <Button bg="white" color="black"><a href={Resume} download={true}>Resume <ExternalLinkIcon/></a></Button>
     </HStack>
     </Show>
     <Show below='md'>
@@ -70,12 +51,12 @@ const navbar = () => {
   <MenuButton><HamburgerIcon boxSize="2em"/></MenuButton>
   <Portal>
     <MenuList>
-      <MenuItem><NavLink to="/">Home</NavLink></MenuItem>
-      <MenuItem><NavLink to="/about">About Me</NavLink></MenuItem>
-      <MenuItem>Skills</MenuItem>
-      <MenuItem>Project</MenuItem>
-      <MenuItem>Contact</MenuItem>
-      <MenuItem><a href='https://drive.google.com/file/d/1NXdejID4ESWnBTpnrxQgJP6-9c17_777/view?usp=share_link' download={true}>Resume <ExternalLinkIcon/></a></MenuItem>
+    {link.map((e) => (
+      <MenuItem key={e.id}>
+      <Link activeClass="active" to={e.id} spy={true} smooth={true} duration={1500}>{e.title}</Link>
+      </MenuItem>
+      ))}
+      <MenuItem><a href={Resume} download={true}>Resume <ExternalLinkIcon/></a></MenuItem>
     </MenuList>
   </Portal>
 </Menu>
