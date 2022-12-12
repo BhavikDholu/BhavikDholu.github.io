@@ -2,12 +2,11 @@ import React from 'react';
 import {Flex,Box,Text,HStack,Button,Show, Menu,
   MenuButton,
   MenuList,
-  MenuItem,Portal} from "@chakra-ui/react";
+  MenuItem,Portal,Link} from "@chakra-ui/react";
 import './Navbar.css';
 import {HamburgerIcon} from "@chakra-ui/icons";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
-import Resume from "../assets/Bhavik_Dholu_Resume.pdf";
-import {Link} from "react-scroll";
+import {Link as Rlink}  from "react-scroll";
 
 const link = [
   { id : "home",
@@ -41,9 +40,9 @@ const navbar = () => {
     <Show above='md'>
     <HStack className='link-stack'>
     {link.map((e) => (
-        <Link key={e.id} activeClass="active" to={e.id} spy={true} smooth={true} duration={1500}>{e.title}</Link>
+        <Rlink key={e.id} activeClass="active" to={e.id} spy={true} smooth={true} duration={1500}>{e.title}</Rlink>
       ))}
-      <Button bg="white" color="black"><a href={Resume} download={true}>Resume <ExternalLinkIcon/></a></Button>
+      <Button bg="white" color="black"><Link href="https://drive.google.com/file/d/1NXdejID4ESWnBTpnrxQgJP6-9c17_777/view?usp=sharing" isExternal>Resume <ExternalLinkIcon/></Link></Button>
     </HStack>
     </Show>
     <Show below='md'>
@@ -53,10 +52,10 @@ const navbar = () => {
     <MenuList>
     {link.map((e) => (
       <MenuItem key={e.id}>
-      <Link activeClass="active" to={e.id} spy={true} smooth={true} duration={1500}>{e.title}</Link>
+      <Rlink activeClass="active" to={e.id} spy={true} smooth={true} duration={1500}>{e.title}</Rlink>
       </MenuItem>
       ))}
-      <MenuItem><a href={Resume} download={true}>Resume <ExternalLinkIcon/></a></MenuItem>
+      <MenuItem><Link href="https://drive.google.com/file/d/1NXdejID4ESWnBTpnrxQgJP6-9c17_777/view?usp=sharing" isExternal>Resume <ExternalLinkIcon/></Link></MenuItem>
     </MenuList>
   </Portal>
 </Menu>

@@ -18,6 +18,7 @@ import optimizly_img from "../assets/optimizly.png";
 import indiegogo_img from "../assets/Indiegogo.png";
 import monday_img from "../assets/monday_img.png";
 
+
 const project_data = [
   {  id:1,
     project_name : "Optimizely-Clone",
@@ -26,6 +27,7 @@ const project_data = [
     image : optimizly_img,
     github : "https://github.com/BhavikDholu/optimizely.com-clone",
     deploy : "https://funny-kataifi-02e4e4.netlify.app/index.html",
+    TechStack : "Javascript, HTML, CSS, Bootstrap"
  },
  {  id:2,
   project_name : "Indiegogo-Clone",
@@ -34,6 +36,7 @@ const project_data = [
   image : indiegogo_img,
   github : "https://github.com/BhavikDholu/indiegogo.com-clone",
   deploy : "https://brilliant-shortbread-d82a11.netlify.app/index.html",
+  TechStack : "Javascript, HTML, CSS, Bootstrap"
 },
 {  id:3,
   project_name : "Monday.com-Clone",
@@ -42,6 +45,7 @@ const project_data = [
   image : monday_img,
   github : "https://github.com/BhavikDholu/monday.com-clone/tree/main/rct_project",
   deploy : "https://astonishing-zabaione-3084ac.netlify.app/",
+  TechStack : "React, CSS, Chakra-Ui"
 }
 ];
 
@@ -108,6 +112,10 @@ const Project = () => {
                 <ListItem>
                   <ListIcon as={SettingsIcon} color='blue.400' fontSize={'xl'} />
                   {project.creater}
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={SettingsIcon} color='blue.400' fontSize={'xl'} />
+                  TechStack:- {project.TechStack}
                 </ListItem>
             </List>
             <Stack

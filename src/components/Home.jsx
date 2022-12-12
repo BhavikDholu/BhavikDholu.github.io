@@ -10,7 +10,7 @@ const Home = () => {
           <Heading sixe="xl" mt={2}>Hello, World!</Heading>
           <Heading size="xl" mt={2}>I am Bhavik Dholu</Heading>
           <Heading size='md' mt={2}>MERN STACK DEVELOPER</Heading>
-          <Button bg="white" mt={2} color="black">Resume <ExternalLinkIcon/></Button>
+          <Button bg="white" mt={2} color="black"><Link href="https://drive.google.com/file/d/1NXdejID4ESWnBTpnrxQgJP6-9c17_777/view?usp=sharing" isExternal>Resume <ExternalLinkIcon/></Link></Button>
           <Box>
           <Flex mt={3} gap={5}>
           <Link href='https://github.com/BhavikDholu' isExternal>
