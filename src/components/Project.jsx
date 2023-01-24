@@ -17,7 +17,7 @@ import {SettingsIcon,ExternalLinkIcon} from "@chakra-ui/icons";
 import optimizly_img from "../assets/optimizly.png";
 import indiegogo_img from "../assets/Indiegogo.png";
 import monday_img from "../assets/monday_img.png";
-
+import foryou_img from "../assets/ForYou.com.png";
 
 const project_data = [
   {  id:1,
@@ -45,6 +45,15 @@ const project_data = [
   image : monday_img,
   github : "https://github.com/BhavikDholu/monday.com-clone/tree/main/rct_project",
   deploy : "https://astonishing-zabaione-3084ac.netlify.app/",
+  TechStack : "React, CSS, Chakra-Ui"
+},
+{  id:4,
+  project_name : "ForYou.com-Clone",
+  detail : "ForYou.com is clone of Reliance Digital E-commerce website, Reliance Digital is India’s fastest growing online retail store for electronic products. This project was completed in 5 days during the Unit Week at Masai School",
+  creater : "A collaborative project Developed within 4 days, with a team of 3.",
+  image : foryou_img,
+  github : "https://github.com/PoojaBijwal/luxuriant-square-3578",
+  deploy : "https://comforting-concha-d43513.netlify.app/",
   TechStack : "React, CSS, Chakra-Ui"
 }
 ];

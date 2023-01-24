@@ -7,6 +7,7 @@ import './Navbar.css';
 import {HamburgerIcon} from "@chakra-ui/icons";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
 import {Link as Rlink}  from "react-scroll";
+import {useNavigate} from "react-router-dom"
 
 const link = [
   { id : "home",
@@ -27,6 +28,10 @@ const link = [
 ];
 
 const navbar = () => {
+
+  //  const onClick = ()=>{
+  //   window.location.href = "https://drive.google.com/uc?export=download&id=1NXdejID4ESWnBTpnrxQgJP6-9c17_777"
+  //  }
 
   return (
     <div className="navbar">

@@ -1,14 +1,15 @@
 import React from 'react'
 import {Box, Flex, Heading, Image, Text} from "@chakra-ui/react";
-import GitHubCalendar from 'react-github-calendar'
+import GitHubCalendar from 'react-github-calendar';
+import github from "../assets/github.png";
 
 
-function Github() {
+const Github = () => {
 
     const selectLastHalfYear = contributions => {
         const currentYear = new Date().getFullYear();
         const currentMonth = new Date().getMonth();
-        const shownMonths = 8;
+        const shownMonths = 1;
       
         return contributions.filter(day => {
           const date = new Date(day.date);
@@ -36,13 +37,16 @@ function Github() {
        </Heading>
        <Box pt={10} pb={10}>
        <Flex direction={'column'} gap="30px" margin="auto">
-           <Box border="1px solid gray" w={{base:'90%',md:"60%",lg:'40%'}} align="center" margin="auto" p={5} borderRadius='10px'>
+           {/* <Box border="1px solid gray" w={{base:'90%',md:"60%",lg:'40%'}} align="center" margin="auto" p={5} borderRadius='10px'>
            <GitHubCalendar
             username="BhavikDholu"
             transformData={selectLastHalfYear}  
             color="#4299E1" 
             width="90%"
             />
+           </Box> */}
+           <Box w={{base:'90%',md:"60%",lg:'40%'}} align="center" margin="auto" borderRadius={10} border="1px solid gray">
+            <Image src={github} alt="git" borderRadius={10}/>
            </Box>
            <Box w={{base:'90%',md:"60%",lg:'40%'}} align="center" margin="auto">
             <Image src="https://github-readme-streak-stats.herokuapp.com/?user=bhavikdholu&theme=dark&border_radius=15" alt="git"/>
