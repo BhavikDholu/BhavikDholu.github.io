@@ -4,7 +4,7 @@ import coding_gif  from "../assets/coding_gif.gif";
 
 const AboutMe = () => {
   return (
-    <Box id="about">
+    <Box id="about" h={{base:"auto",md:"100vh",lg:'80vh'}}>
       <Heading
             lineHeight={1.1}
             fontWeight={600}

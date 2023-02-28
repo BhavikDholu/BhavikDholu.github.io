@@ -18,8 +18,18 @@ import optimizly_img from "../assets/optimizly.png";
 import indiegogo_img from "../assets/Indiegogo.png";
 import monday_img from "../assets/monday_img.png";
 import foryou_img from "../assets/ForYou.com.png";
+import yourshop_img from "../assets/yourshop.com.png";
 
 const project_data = [
+  {  id:5,
+    project_name : "YourShop.com",
+    detail : "YourShop is a E-commerce website for men, women and kids, that too all under one roof. This platform not only keep all your favourite products but also you'll be able to buy all your favourite fashion products online at your convenience with best of the prices.",
+    creater : "A individual project Developed within 25 days.",
+    image : yourshop_img,
+    github : "https://github.com/BhavikDholu/YourShop.com",
+    deploy : "https://yourshop-hazel.vercel.app/",
+    TechStack : "reactjs, redux, redux-thunk, nodejs, css, mongodb,  mongoose, expressjs, cyclic, chakra-ui, vercel"
+  },
   {  id:1,
     project_name : "Optimizely-Clone",
     detail : "Optimizely is an American company that provides digital experience platform software as a service.",
