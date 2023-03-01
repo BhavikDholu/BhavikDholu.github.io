@@ -5,7 +5,8 @@ import {
   Text,
   HStack,
   Button,
-  Show
+  Show,
+  Hide
 } from "@chakra-ui/react";
 import "./Navbar.css";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
@@ -19,6 +20,7 @@ const link = [
   { id: "about", title: "About Me" },
   { id: "skill", title: "Skills" },
   { id: "project", title: "Project" },
+  { id: "git", title: "Git Status" },
   { id: "contact", title: "Contact" },
 ];
 
@@ -38,7 +40,7 @@ const navbar = () => {
             </Text>
           </Box>
           <Show above="md">
-            <HStack className="link-stack">
+            <HStack className="link-stack" fontSize={'16px'}>
               {link.map((e) => (
                 <Rlink
                   key={e.id}
@@ -47,6 +49,7 @@ const navbar = () => {
                   spy={true}
                   smooth={true}
                   duration={1000}
+                  offset={-92}
                 >
                   {e.title}
                 </Rlink>
@@ -62,9 +65,9 @@ const navbar = () => {
               </a>
             </HStack>
           </Show>
-          <Show below="md">
+          <Hide above="md">
            <SideDrawer />
-          </Show>
+          </Hide>
         </Flex>
       </Box>
     </div>

@@ -1,16 +1,29 @@
 import React from 'react'
 import {Box , Heading, Image, SimpleGrid , Button, Link,Flex} from "@chakra-ui/react";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
-import {BsGithub,BsLinkedin} from "react-icons/bs"
+import {BsGithub,BsLinkedin} from "react-icons/bs";
+import resume from "../assets/fw20_0582-Bhavik-Dholu-Resume.pdf";
+
 const Home = () => {
+  function openInNewTab() {
+    window.open("https://drive.google.com/file/d/1NXdejID4ESWnBTpnrxQgJP6-9c17_777/view?usp=sharing", '_blank').focus();
+  }
   return (
-    <Box h={{base:"auto",md:"80vh"}} id="home">
+    <Box h={{base:"auto",md:"75vh",lg:"85vh"}} id="home" mt='10px'>
       <SimpleGrid columns={{sm: 1, md: 2}} justifyContent="space-around" mt={[0, 4, 6, 8]}>
-        <Box p={[4, 8, 14, 20]} textAlign={{base:"center", md:"left"}} spacing={10}>
+        <Box p={[4, 8, 14, 20]} m='auto' textAlign={{base:"center", md:"left"}} spacing={10}>
           <Heading sixe="xl" mt={2}>Hello, World!</Heading>
           <Heading size="xl" mt={2}>I am Bhavik Dholu</Heading>
           <Heading size='md' mt={2}>MERN STACK DEVELOPER</Heading>
-          <Button bg="white" mt={2} color="black"><Link href="https://drive.google.com/file/d/1NXdejID4ESWnBTpnrxQgJP6-9c17_777/view?usp=sharing" isExternal>Resume <ExternalLinkIcon/></Link></Button>
+          <a
+                href={resume}
+                download
+                onClick={openInNewTab}
+              >
+                <Button bg="white" mt={2} color="black">
+                  Resume <ExternalLinkIcon />
+                </Button>
+              </a>
           <Box>
           <Flex mt={3} gap={5}>
           <Link href='https://github.com/BhavikDholu' isExternal>

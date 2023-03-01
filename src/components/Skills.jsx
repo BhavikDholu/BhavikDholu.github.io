@@ -146,9 +146,9 @@ const Skills = () => {
                     <Box
                       key={skill.id}
                       mt={{ base: "10px" }}
-                      width={{ base: "80px", sm: "80px", lg: "100px" }}
+                      width={{ base: "80px", sm: "80px", lg: "90px" }}
                       p={1}
-                      h={{ base: "80px", sm: "80px", lg: "100px" }}
+                      h={{ base: "80px", sm: "80px", lg: "90px" }}
                       align="center"
                     >
                       <Image src={skill.logo} objectFit="cover" alt="logo" />

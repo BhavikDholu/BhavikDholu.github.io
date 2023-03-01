@@ -45,7 +45,7 @@ const project_data = [
   creater : "A individual project Developed within 5 days.",
   image : indiegogo_img,
   github : "https://github.com/BhavikDholu/indiegogo.com-clone",
-  deploy : "https://brilliant-shortbread-d82a11.netlify.app/index.html",
+  deploy : "https://brilliant-shortbread-d82a11.netlify.app/",
   TechStack : "Javascript, HTML, CSS, Bootstrap"
 },
 {  id:3,

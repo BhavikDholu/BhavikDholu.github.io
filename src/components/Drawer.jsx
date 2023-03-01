@@ -23,6 +23,7 @@ function SideDrawer() {
     { id: "about", title: "About Me" },
     { id: "skill", title: "Skills" },
     { id: "project", title: "Project" },
+    { id: "git", title: "Git Status" },
     { id: "contact", title: "Contact" },
   ];
   function openInNewTab() {
@@ -55,8 +56,9 @@ function SideDrawer() {
                     spy={true}
                     smooth={true}
                     duration={1500}
+                    offset={-92}
                   >
-                    <Button mt={5} w='100%'>
+                    <Button mt={5} w='100%' onClick={onClose} bg='gray.400'>
                     {e.title}
                     </Button>
                   </Rlink>
@@ -67,7 +69,7 @@ function SideDrawer() {
                 download
                 onClick={openInNewTab}
               >
-                <Button mt={5} w='100%'>
+                <Button mt={5} w='100%' onClick={onClose} bg='gray.400'>
                   Resume <ExternalLinkIcon />
                 </Button>
               </a>
