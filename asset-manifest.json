@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.447589dd.css",
-    "main.js": "/static/js/main.b73149c5.js",
+    "main.js": "/static/js/main.2a7176e7.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/coding_gif.gif": "/static/media/coding_gif.97f2b188b8af96fb1758.gif",
     "static/media/Indiegogo.png": "/static/media/Indiegogo.e929362137eb9077b113.png",
@@ -12,11 +12,11 @@
     "static/media/Bhavik-Dholu-Resume.pdf": "/static/media/Bhavik-Dholu-Resume.278700bbaa765960668f.pdf",
     "index.html": "/index.html",
     "main.447589dd.css.map": "/static/css/main.447589dd.css.map",
-    "main.b73149c5.js.map": "/static/js/main.b73149c5.js.map",
+    "main.2a7176e7.js.map": "/static/js/main.2a7176e7.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.447589dd.css",
-    "static/js/main.b73149c5.js"
+    "static/js/main.2a7176e7.js"
   ]
 }
