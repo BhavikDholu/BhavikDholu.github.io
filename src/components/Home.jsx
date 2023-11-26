@@ -2,11 +2,11 @@ import React from 'react'
 import {Box , Heading, Image, SimpleGrid , Button, Link,Flex} from "@chakra-ui/react";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
 import {BsGithub,BsLinkedin} from "react-icons/bs";
-import resume from "../assets/fw20_0582-Bhavik-Dholu-Resume.pdf";
+import resume from "../assets/Bhavik_Dholu-Resume.pdf";
 
 const Home = () => {
   function openInNewTab() {
-    window.open("https://drive.google.com/file/d/1NXdejID4ESWnBTpnrxQgJP6-9c17_777/view?usp=sharing", '_blank').focus();
+    window.open("https://drive.google.com/file/d/1QC3ExHca-NkwwC0UKDLebGJFlo8du0Sr/view?usp=sharing", '_blank').focus();
   }
   return (
     <Box h={{base:"auto",md:"75vh",lg:"85vh"}} id="home" mt='10px'>
@@ -17,7 +17,7 @@ const Home = () => {
           <Heading size='md' mt={2}>MERN STACK DEVELOPER</Heading>
           <a
                 href={resume}
-                download
+                download="Bhavik_Dholu-Resume"
                 onClick={openInNewTab}
               >
                 <Button bg="white" mt={2} color="black">
