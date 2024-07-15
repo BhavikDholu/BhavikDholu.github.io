@@ -34,7 +34,6 @@ export default function Contact() {
     message: ""
   })
   const handleFormSubmit = () => {
-    console.log(detail, "detail");
   }
   return (
     <Box mt="60px" id="contact">
