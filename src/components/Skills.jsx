@@ -120,7 +120,7 @@ const Skills_data = [
 
 const Skills = () => {
   return (
-    <Box h={{ base: "auto", md: "80vh", lg:'90vh' }} id="skill">
+    <Box id="skill">
       <Heading
         lineHeight={1.1}
         fontWeight={600}
@@ -130,7 +130,7 @@ const Skills = () => {
       </Heading>
       <Box width={"70%"} margin="auto" mt="30px">
         <Tabs variant="soft-rounded" colorScheme="gray" >
-          <TabList justifyContent={'space-around'} >
+          <TabList justifyContent={'space-around'} style={{ borderBottom: "1px solid #718096", padding: "20px" }}>
             <Tab color='white'>Frontend</Tab>
             <Tab color='white'>Backend</Tab>
             <Tab color='white'>Tools</Tab>
