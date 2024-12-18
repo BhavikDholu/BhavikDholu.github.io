@@ -2,7 +2,6 @@ import React from 'react'
 import { Box, Heading, Image, SimpleGrid, Button, Link, Flex } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import resume from "../assets/Bhavik_Dholu-Resume.pdf";
 
 const Home = () => {
   function openInNewTab() {
@@ -15,14 +14,9 @@ const Home = () => {
           <Heading sixe="xl" mt={2}>Hello, World!</Heading>
           <Heading size="xl" mt={2}>I am Bhavik Dholu</Heading>
           <Heading size='md' mt={2}>MERN STACK DEVELOPER</Heading>
-          <a
-            href={resume}
-            onClick={openInNewTab}
-          >
-            <Button bg="white" mt={2} color="black">
-              Resume <ExternalLinkIcon />
-            </Button>
-          </a>
+          <Button bg="white" mt={2} color="black" onClick={openInNewTab}>
+            Resume <ExternalLinkIcon />
+          </Button>
           <Box>
             <Flex mt={3} gap={5}>
               <Link href='https://github.com/BhavikDholu' isExternal>

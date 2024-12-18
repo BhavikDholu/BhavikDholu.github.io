@@ -13,7 +13,6 @@ import {
 import React from "react";
 import { Link as Rlink } from "react-scroll";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import resume from "../assets/Bhavik_Dholu-Resume.pdf";
 
 function SideDrawer() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -27,6 +26,7 @@ function SideDrawer() {
     { id: "contact", title: "Contact" },
   ];
   function openInNewTab() {
+    onClose();
     window.open("https://drive.google.com/file/d/1QC3ExHca-NkwwC0UKDLebGJFlo8du0Sr/view?usp=sharing", '_blank').focus();
   }
   return (
@@ -64,14 +64,9 @@ function SideDrawer() {
                 </Rlink>
 
               ))}
-              <a
-                href={resume}
-                onClick={openInNewTab}
-              >
-                <Button mt={5} w='100%' onClick={onClose} bg='gray.400'>
-                  Resume <ExternalLinkIcon />
-                </Button>
-              </a>
+              <Button mt={5} w='100%' bg='gray.400' onClick={openInNewTab}>
+                Resume <ExternalLinkIcon />
+              </Button>
             </Flex>
           </DrawerBody>
         </DrawerContent>

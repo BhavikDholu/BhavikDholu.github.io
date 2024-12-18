@@ -12,8 +12,6 @@ import "./Navbar.css";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Link as Rlink } from "react-scroll";
 import SideDrawer from "./Drawer";
-import resume from "../assets/Bhavik_Dholu-Resume.pdf";
-
 
 const link = [
   { id: "home", title: "Home" },
@@ -55,14 +53,9 @@ const navbar = () => {
                   {e.title}
                 </Rlink>
               ))}
-              <a
-                href={resume}
-                onClick={openInNewTab}
-              >
-                <Button bg="white" color="black">
-                  Resume <ExternalLinkIcon />
-                </Button>
-              </a>
+              <Button bg="white" color="black" onClick={openInNewTab}>
+                Resume <ExternalLinkIcon />
+              </Button>
             </HStack>
           </Show>
           <Hide above="md">
