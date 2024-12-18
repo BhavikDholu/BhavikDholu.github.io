@@ -17,7 +17,6 @@ const Home = () => {
           <Heading size='md' mt={2}>MERN STACK DEVELOPER</Heading>
           <a
             href={resume}
-            download="Bhavik_Dholu-Resume"
             onClick={openInNewTab}
           >
             <Button bg="white" mt={2} color="black">

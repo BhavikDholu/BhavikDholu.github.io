@@ -48,25 +48,24 @@ function SideDrawer() {
           <DrawerBody>
             <Flex direction={"column"}>
               {link.map((e) => (
-                
-                  <Rlink
+
+                <Rlink
                   key={e.id}
-                    activeClass="active"
-                    to={e.id}
-                    spy={true}
-                    smooth={true}
-                    duration={1500}
-                    offset={-92}
-                  >
-                    <Button mt={5} w='100%' onClick={onClose} bg='gray.400'>
+                  activeClass="active"
+                  to={e.id}
+                  spy={true}
+                  smooth={true}
+                  duration={1500}
+                  offset={-92}
+                >
+                  <Button mt={5} w='100%' onClick={onClose} bg='gray.400'>
                     {e.title}
-                    </Button>
-                  </Rlink>
-                
+                  </Button>
+                </Rlink>
+
               ))}
               <a
                 href={resume}
-                download="Bhavik_Dholu-Resume"
                 onClick={openInNewTab}
               >
                 <Button mt={5} w='100%' onClick={onClose} bg='gray.400'>

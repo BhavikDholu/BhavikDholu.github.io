@@ -50,23 +50,23 @@ const navbar = () => {
                   smooth={true}
                   duration={1000}
                   offset={-92}
+                  style={{ cursor: 'pointer' }}
                 >
                   {e.title}
                 </Rlink>
               ))}
               <a
                 href={resume}
-                download="Bhavik_Dholu-Resume"
                 onClick={openInNewTab}
               >
                 <Button bg="white" color="black">
                   Resume <ExternalLinkIcon />
-              </Button>
+                </Button>
               </a>
             </HStack>
           </Show>
           <Hide above="md">
-           <SideDrawer />
+            <SideDrawer />
           </Hide>
         </Flex>
       </Box>
